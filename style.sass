@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap')
+
+$Red: hsl(0, 100%, 74%)
+$Green: hsl(154, 59%, 51%)
+$Purple: hsl(248, 32%, 49%)
+$Black: hsl(249, 10%, 26%)
+$Grayish-Blue: hsl(246, 25%, 77%)
+
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+  font-family: 'Poppins', sans-serif
+
+body
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 100vh
+  background-color: $Red
+  padding: 7%
+  background-image: url(/images/bg-intro-desktop.png)
+
+.header
+  max-width: 430px
+
+  color: white
+  margin-right: 10%
+  h1
+    line-height: 1.5em
+    margin-bottom: 7%
+
+.card-wrapper
+  display: flex
+  align-items: center
+  flex-direction: column
+  min-width: 450px
+
+.card
+  display: flex
+  align-items: center
+  flex-direction: column
+  background-color: white
+  justify-content: space-evenly
+  height: 450px
+  font-size: 13px
+  border-radius: 10px
+  min-width: 450px
+  box-shadow: 2px 2px 5px 0px #0000002f
+
+form
+  display: flex
+  align-items: center
+  flex-direction: column
+  justify-content: space-evenly
+  height: 400px
+
+input
+  all: unset
+  display: flex
+  outline: solid 1px gray
+  padding: 3%
+  width: 350px
+  font-weight: 700
+  border-radius: 3px
+
+small
+  width: 105%
+  display: flex
+  justify-content: flex-end
+  margin-top: 1%
+  color: $Red
+  display: none
+
+.error
+  display: flex
+  flex-direction: column
+  position: relative
+
+img
+  position: absolute
+  top: 15%
+  left: 90%
+  display: none
+
+.trial
+  text-align: center
+  color: white
+  background-color: $Purple
+  padding: 3%
+  margin-bottom: 5%
+  border-radius: 10px
+  white-space: nowrap
+  min-width: 450px
+  box-shadow: 2px 5px 5px 0px #00000026
+
+#submit
+  display: flex
+  align-items: center
+  justify-content: center
+  text-transform: uppercase
+  text-align: center
+  color: white
+  background-color: $Green
+  cursor: pointer
+  outline: none
+  box-shadow: 2px 2px 5px 0px #00000026
+
+.footer
+  display: flex
+  align-items: center
+  color: $Grayish-Blue
+  font-size: 11px
+
+a
+  all: unset
+  color: $Red
+  font-weight: 700
+  cursor: pointer
+
+@media (max-width: 800px)
+
+  body
+    margin: 0 auto
+    flex-direction: column
+    padding: 0
+    background-image: url(/images/bg-intro-mobile.png)
+
+  .header
+    min-width: initial
+    max-width: 320px
+    text-align: center
+    margin-right: 0
+    margin-bottom: 7%
+
+  .card-wrapper
+    max-width: 320px
+    min-width: unset
+
+  .trial
+    display: flex
+    justify-content: center
+    padding: 7%
+    max-width: 320px
+    min-width: 100%
+    white-space: normal
+    p
+      margin: 0
+      max-width: 200px
+
+  .card
+    min-width: unset
+    max-width: 320px
+
+  form
+    min-width: 320px
+    max-width: 320px
+
+  .error
+    display: flex
+    align-items: center
+    min-width: 75%
+  img
+    top: 20%
+    left: 85%
+
+  input
+    padding: 7%
+    width: 100%
+
+  .submit
+    display: flex
+    align-items: center
+    width: 240px
+    input
+      padding: 7%
+
+  .footer
+    text-align: center
+    padding: 0 5%
