@@ -10,8 +10,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  background-color: hsl(0deg, 100%, 74%);
+  height: 100%;
+  background-color: hsl(0, 100%, 74%);
   padding: 7%;
   background-image: url(/images/bg-intro-desktop.png);
 }
@@ -69,7 +69,7 @@ small {
   display: flex;
   justify-content: flex-end;
   margin-top: 1%;
-  color: hsl(0deg, 100%, 74%);
+  color: hsl(0, 100%, 74%);
   display: none;
 }
 
@@ -89,7 +89,7 @@ img {
 .trial {
   text-align: center;
   color: white;
-  background-color: hsl(248deg, 32%, 49%);
+  background-color: hsl(248, 32%, 49%);
   padding: 3%;
   margin-bottom: 5%;
   border-radius: 10px;
@@ -105,7 +105,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: white;
-  background-color: hsl(154deg, 59%, 51%);
+  background-color: hsl(154, 59%, 51%);
   cursor: pointer;
   outline: none;
   box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1490196078);
@@ -114,40 +114,38 @@ img {
 .footer {
   display: flex;
   align-items: center;
-  color: hsl(246deg, 25%, 77%);
+  color: hsl(246, 25%, 77%);
   font-size: 11px;
 }
 
 a {
   all: unset;
-  color: hsl(0deg, 100%, 74%);
+  color: hsl(0, 100%, 74%);
   font-weight: 700;
   cursor: pointer;
 }
 
 @media (max-width: 800px) {
   body {
-    margin: 0 auto;
     flex-direction: column;
-    padding: 0;
     background-image: url(/images/bg-intro-mobile.png);
   }
   .header {
     min-width: initial;
-    max-width: 320px;
+    max-width: 280px;
     text-align: center;
     margin-right: 0;
     margin-bottom: 7%;
   }
   .card-wrapper {
-    max-width: 320px;
+    max-width: 280px;
     min-width: unset;
   }
   .trial {
     display: flex;
     justify-content: center;
     padding: 7%;
-    max-width: 320px;
+    max-width: 280px;
     min-width: 100%;
     white-space: normal;
   }
@@ -157,11 +155,11 @@ a {
   }
   .card {
     min-width: unset;
-    max-width: 320px;
+    max-width: 280px;
   }
   form {
-    min-width: 320px;
-    max-width: 320px;
+    min-width: 280px;
+    max-width: 280px;
   }
   .error {
     display: flex;

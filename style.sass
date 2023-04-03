@@ -16,7 +16,7 @@ body
   display: flex
   align-items: center
   justify-content: center
-  height: 100vh
+  height: 100%
   background-color: $Red
   padding: 7%
   background-image: url(/images/bg-intro-desktop.png)
@@ -121,27 +121,25 @@ a
 @media (max-width: 800px)
 
   body
-    margin: 0 auto
     flex-direction: column
-    padding: 0
     background-image: url(/images/bg-intro-mobile.png)
 
   .header
     min-width: initial
-    max-width: 320px
+    max-width: 280px
     text-align: center
     margin-right: 0
     margin-bottom: 7%
 
   .card-wrapper
-    max-width: 320px
+    max-width: 280px
     min-width: unset
 
   .trial
     display: flex
     justify-content: center
     padding: 7%
-    max-width: 320px
+    max-width: 280px
     min-width: 100%
     white-space: normal
     p
@@ -150,11 +148,11 @@ a
 
   .card
     min-width: unset
-    max-width: 320px
+    max-width: 280px
 
   form
-    min-width: 320px
-    max-width: 320px
+    min-width: 280px
+    max-width: 280px
 
   .error
     display: flex
